@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="/main.js"></script>
+    <title>Curso - LetsBrownie</title>
+
+    <style>
+        html {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background: linear-gradient(135deg, #c1a4f6, #9c70f8, #6a41e3);
+            line-height: 1.5;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <section class="bg-white p-8 mx-auto my-8 w-3/4 rounded-lg ">
+        <img src="/imgs/logo.png" class="m-auto border rounded-2xl">
+        <h2 class="text-2xl font-extrabold text-center mb-4 mt-4 text-gray-900">Curso Básico de Confeitaria</h2>
+        <p class="mb-4 text-gray-900 font-medium">
+            Você já sonhou em criar doces irresistíveis que encantam tanto os olhos quanto o paladar? Com o nosso 
+            <strong>Curso Básico de Confeitaria</strong>, você aprenderá técnicas essenciais para preparar bolos, tortas, 
+            cupcakes e muito mais, tudo do conforto da sua casa!
+        </p>
+        <h3 class="text-xl font-semibold mb-3 text-gray-900">Vantagens do Curso</h3>
+        <ul class="list-disc list-inside mb-4 text-gray-900 font-medium">
+            <li>Aulas 100% online, acessíveis em qualquer dispositivo.</li>
+            <li>Material didático completo e disponível para download.</li>
+            <li>Certificado de conclusão reconhecido.</li>
+            <li>Acesso vitalício ao conteúdo do curso.</li>
+            <li>Suporte direto com os instrutores para tirar dúvidas.</li>
+        </ul>
+        
+        <h3 class="text-xl font-semibold mb-3 text-gray-900">Preço</h3>
+        <p class="mb-4 text-gray-900 font-medium">
+            Tudo isso por apenas <strong class="text-blue-700">R$ 147,00</strong>. Aproveite essa oportunidade para 
+            transformar sua paixão por confeitaria em habilidades práticas que farão sucesso em qualquer ocasião!
+        </p>
+        <p class="text-gray-900 text-center">
+            <em>Garanta já sua vaga e comece a confeitar como um profissional!</em>
+        </p>
+    </section>
+   
+    <section>
+        <div class="bg-white p-8 rounded-lg shadow-lg w-3/4 m-auto mt-8 mb-16">
+            <h2 class="text-2xl text-center mb-6">Garanta a sua vaga!</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="nome" class="block text-gray-700 font-semibold mb-2">Nome *</label>
+                    <input type="text" id="nome" name="nome" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-semibold mb-2">Email *</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="telefone" class="block text-gray-700 font-semibold mb-2">Telefone *</label>
+                    <input type="text" id="telefone" name="telefone" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="cupom" class="block text-gray-700 font-semibold mb-2">Cupom de Desconto</label>
+                    <input type="text" id="cupom" name="cupom" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <p class="font-semibold text-blue-500 mb-4">Valor do curso: <span id="preco-original">R$147,00</span></p>
+                <p id="desconto-aplicado"></p>
+                
+                <button type="button" id="btn-desconto" class="w-full bg-green-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    Aplicar cupom
+                </button>
+
+                <button type="submit" class="w-full bg-green-500 text-white font-semibold py-2 px-4 mt-4 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    Finalizar compra
+                </button>
+            </form>
+        </div>
+    </section>
+
+
+</body>
+</html>
