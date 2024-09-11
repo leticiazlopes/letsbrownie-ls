@@ -1,2 +1,0 @@
-npm run build 
-no github pages, implanta-se a pasta "dist"
