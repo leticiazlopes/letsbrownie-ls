@@ -1,12 +1,16 @@
-import React from 'react'; // Importando React
-import App from '../components-cards/App'
-import Card from '../components-cards/Card';
-import Produtos from '../components-cards/Produtos';
+import Body from "../components-curso/Body";
+import Header from "../components-curso/Header";
+import Forms from "../components-curso/Forms"
+import "../layout"
 
-export default function Home() {
-    return (
-        <div>
-            <App />
-        </div>
-    );
+const Home = () => {
+  return (
+    <div>
+      <Header />
+      <Body />
+      <Forms />
+    </div>
+  )
 }
+
+export default Home;
