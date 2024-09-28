@@ -11,8 +11,8 @@ export default function Body () {
                 height={100}
                 className="border rounded-2xl mb-8"
             />
-            <Button label="Nossos produtos" href="/index" className="botao"/>
-            <Button label="Curso de confeitaria básica" href="/index" className= "botao" />
+            <Button label="Nossos produtos" href="/produtos/" className="botao"/>
+            <Button label="Curso de confeitaria básica" href="/curso/" className= "botao" />
             </div>
             
 

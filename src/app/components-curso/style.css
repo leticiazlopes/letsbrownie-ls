@@ -1,0 +1,9 @@
+html {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(135deg, #c1a4f6, #9c70f8, #6a41e3);
+    line-height: 1.5;
+    font-weight: 400;
+}
+h2 {
+    color: black;
+}
