@@ -1,5 +1,5 @@
-import Body from "./components-cards/Body";
-import Header from "./components-cards/Header";
+import Body from "./components-home/Body";
+import Header from "./components-home/Header";
 import "./layout"
 
 const Home = () => {
