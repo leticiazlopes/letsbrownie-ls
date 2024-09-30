@@ -1,7 +1,15 @@
 # 🍫 Let's Brownie
 
-
+<div>
 Esse projeto visa construir uma <strong>página de links para uma doceria,</strong> centralizando suas informações e maiores demandas para facilitar o acesso para seu público. Esse foi desenvolvido na matéria de <strong>Linguagem de Script</strong>, ministrada pelo professor Luiz Carlos e Francisco Dantas do curso de Sistemas para Internet do IFPB.
+</div>
+<br>
+
+* [👀 Interfaces](#-interfaces)
+* [🚀 Instalação e execução](#-instalação-e-execução)
+* [📂 Estrutura de pastas](#-estrutura-de-pastas)
+* [💻 Tecnologias utilizadas](#-tecnologias-utilizadas)
+* [👥 Contribuidores](#-contribuidores)
 
 
 ## 👀 Interfaces
@@ -95,6 +103,8 @@ src/
 │   ├── layout.js             
 ├── supabase.js                
 ```
+
+<br>
 
 
 ## 💻 Tecnologias utilizadas
