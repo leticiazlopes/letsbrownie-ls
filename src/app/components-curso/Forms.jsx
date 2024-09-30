@@ -6,14 +6,14 @@ export default function Forms() {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [telefone, setTelefone] = useState('');
-  const [cupom, setCupom] = useState('');
   const [message, setMessage] = useState('');
 
   const validateForm = (e) => {
     e.preventDefault(); // impede o envio do formulário
 
     // Regex para validar o email e telefone
-    const emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]{2,3}(\.[a-z]{2,3})?$/i;
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|org|net|edu\.br|edu|info|io)$/;
+
     const telefoneRegex = /^[0-9]{10,11}$/;
 
     if (!emailRegex.test(email)) {
@@ -30,7 +30,7 @@ export default function Forms() {
     // Enviando os dados para o Supabase
     const { data, error } = await supabase
       .from('info_supabase') 
-      .insert([{ nome, email, telefone, cupom: cupom || null }]);
+      .insert([{ nome, email, telefone}]);
 
     if (error) {
       console.error('Erro ao inserir dados:', error);
@@ -42,7 +42,6 @@ export default function Forms() {
       setNome('');
       setEmail('');
       setTelefone('');
-      setCupom('');
     }
   };
 
@@ -86,19 +85,6 @@ export default function Forms() {
             onChange={(e) => setTelefone(e.target.value)}
           />
         </div>
-        <div className="mb-4">
-          <label htmlFor="cupom" className="block text-gray-700 font-semibold mb-2">Cupom de Desconto</label>
-          <input
-            type="text"
-            id="cupom"
-            name="cupom"
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            value={cupom}
-            onChange={(e) => setCupom(e.target.value)}
-          />
-        </div>
-
-        <p className="font-semibold text-blue-500 mb-4">Valor do curso: <span id="preco-original">R$147,00</span></p>
         <p className="text-red-500">{message}</p>
         <button type="submit" className="w-full bg-green-500 text-white font-semibold py-2 px-4 mt-4 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
           Finalizar compra
