@@ -28,7 +28,7 @@ const produtos = [
     {
         img: 'caixa_brownies.jpeg',
         nome: 'Caixa de brownies',
-        serve: '2 pessoa',
+        serve: '2 pessoas',
         peso: '300g',
         preco: 'R$ 30',
 
